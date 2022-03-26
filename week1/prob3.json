@@ -1,0 +1,13 @@
+{
+    "name":"Lee Chaerin",
+    "job":"student",
+    "age":21,
+    "hobby":["drama","music"],
+    "course_table":[
+        {"name":"signals and systems"},
+        {"name":"differantial equations"},
+        {"name":"Linear Algebra and its Applications"},
+        {"name":"Introduction to Operations Research"},
+        {"name":"network analysis"}
+    ]
+}
