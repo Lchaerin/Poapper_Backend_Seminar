@@ -1,6 +1,4 @@
-const fs = require('fs');
 const http = require('http');
-const moment = require("moment");
 let result=0
 let eqn=''
 
@@ -27,7 +25,7 @@ const server = http.createServer((req,res) => {
     else if(operator=='div'){
         result=num1/num2
         eqn=num1+' / '+num2+' = '+result
-    }
+    } 
     else{
         eqn='error'
     }
