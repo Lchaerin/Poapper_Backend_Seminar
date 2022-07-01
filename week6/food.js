@@ -1,6 +1,7 @@
 const express = require('express')
 const mysql = require('mysql')
 const router = express.Router();
+const cors = require('cors');
 
 const db = mysql.createConnection({
   host:'localhost',
@@ -12,7 +13,7 @@ const db = mysql.createConnection({
 
 router.use(express.json())
 
-
+router.use(cors());
 
   router.get("", (req, res) => {
     db.query(`SELECT * FROM foods`, (err, data) => {
